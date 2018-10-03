@@ -5,10 +5,9 @@ package com.parqueo.krpp.modelo;
 abstract class persona {
     private Integer nroCedula;
     private String nombreCompleto;
-    private Integer edad;
     private sexo sexo;
     private estadoCivil estadoCivil;
-    private Integer anhoNacimiento;
+    private Integer fechaNacimiento;
 
    
 
@@ -28,15 +27,6 @@ abstract class persona {
     public void setNombreCompleto(String nombreCompleto) {
         this.nombreCompleto = nombreCompleto;
     }
-
-    public Integer getEdad() {
-        return edad;
-    }
-
-    public void setEdad(Integer edad) {
-        this.edad = edad;
-    }
-
     public sexo getSexo() {
         return sexo;
     }
@@ -54,11 +44,11 @@ abstract class persona {
     }
 
     public Integer getAnhoNacimiento() {
-        return anhoNacimiento;
+        return fechaNacimiento;
     }
 
     public void setAnhoNacimiento(Integer anhoNacimiento) {
-        this.anhoNacimiento = anhoNacimiento;
+        this.fechaNacimiento = anhoNacimiento;
     }
     
 }

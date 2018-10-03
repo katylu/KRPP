@@ -38,7 +38,7 @@ public class KrppHibernateUtil {
 
         } catch (HibernateException e) {
             logger.error(
-                    "Ocurrio un error en la inicializaciÃ³n de la SessionFactory",
+                    "Ocurrio un error en la inicializacion de la SessionFactory",
                     e);
             throw new ExceptionInInitializerError(e);
         }
