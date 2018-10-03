@@ -1,6 +1,9 @@
 
 package com.myapp.wicket;
 
+import com.parqueo.krpp.api.UsuarioApi;
+import com.parqueo.krpp.util.KrppHibernateUtil;
+import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
@@ -11,12 +14,17 @@ import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 
 public class LoginPage extends WebPage {
 
-   
+
    private static final long serialVersionUID = 5946349607750478191L;
+
+    final static Logger logger = Logger.getLogger(com.myapp.wicket.vista.LoginPage.class);
   
     public LoginPage() {
 
@@ -35,42 +43,30 @@ public class LoginPage extends WebPage {
             public void onSubmit() {
                 super.onSubmit();
         
-              /* try{
-                   
-               
-                
-                /*if (userModel.getName().equalsIgnoreCase("admin") && userModel.getPass().equals("admin")) {
 
+                if(UsuarioApi.getInstance().existeUsuario(userModel.getName(), userModel.getPass())){
+                    logger.info("Usuario logueado correctamente");
                     UserSession.getInstance().setuSerModel(userModel);
                     setResponsePage(HomePage.class);
-                } else {
-                    //System.out.println("Invalid username or password");
-                    
-                    error("Nombre de Usuario o Contraseña INCORRECTA");
-                    
-                
-            }
-                }catch(NullPointerException e){
-                    error("Hola");
-                }*/
-              
-              if("admin".equals(userModel.getName()) && userModel.getPass().equals("admin")){
-                    UserSession.getInstance().setuSerModel(userModel);
-                    setResponsePage(HomePage.class);
-              }else{
+                }else{
+                    logger.info("Usuario no encontrado");
                     error("Error el nombre de usuario o la contraseña son invalidas");
-              }
+                }
+
             }
-            
-            
+
         });
         
-        
-        
+
 
         add(form);
         add(new FeedbackPanel("feedbackPanel"));
     }
+
+
+
+
+
 }
 
 /*import org.apache.wicket.MarkupContainer;

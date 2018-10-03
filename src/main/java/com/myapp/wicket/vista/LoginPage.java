@@ -5,6 +5,8 @@
  */
 package com.myapp.wicket.vista;
 
+import com.parqueo.krpp.api.UsuarioApi;
+import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
@@ -26,6 +28,8 @@ public class LoginPage extends WebPage {
      *
      */
    private static final long serialVersionUID = 5946349607750478191L;
+
+    final static Logger logger = Logger.getLogger(LoginPage.class);
   
     public LoginPage() {
 
@@ -39,7 +43,6 @@ public class LoginPage extends WebPage {
 
         form.add(new Button("submit") {
             private static final long serialVersionUID = -8676092495300239679L;
-
             @Override
             public void onSubmit() {
                 super.onSubmit();
@@ -62,13 +65,22 @@ public class LoginPage extends WebPage {
                 }catch(NullPointerException e){
                     error("Hola");
                 }*/
-              
-              if("admin".equals(userModel.getName()) && userModel.getPass().equals("admin")){
+
+                if(UsuarioApi.getInstance().existeUsuario(userModel.getName(), userModel.getPass())){
+                    logger.info("Usuario logueado correctamente");
+                    UserSession.getInstance().setuSerModel(userModel);
+                    setResponsePage(HomePage.class);
+                }else{
+                    logger.info("Usuario no encontrado");
+                    error("Wrong username or password");
+                }
+
+              /*if("admin".equals(userModel.getName()) && userModel.getPass().equals("admin")){
                     UserSession.getInstance().setuSerModel(userModel);
                     setResponsePage(HomePage.class);
               }else{
                     error("Wrong username or password");
-              }
+              }*/
             }
             
             

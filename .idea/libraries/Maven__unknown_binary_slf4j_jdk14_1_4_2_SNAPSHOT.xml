@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: unknown.binary:slf4j-jdk14-1.4.2:SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/unknown/binary/slf4j-jdk14-1.4.2/SNAPSHOT/slf4j-jdk14-1.4.2-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/unknown/binary/slf4j-jdk14-1.4.2/SNAPSHOT/slf4j-jdk14-1.4.2-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/unknown/binary/slf4j-jdk14-1.4.2/SNAPSHOT/slf4j-jdk14-1.4.2-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
