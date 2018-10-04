@@ -2,62 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5425a38c-3857-4315-b753-08af07a7fb98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/vista/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/vista/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/LoginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/LoginPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/Tomcat.dpf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/Sexo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/empleado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/estadoCivil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/marca.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/menuSistema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/modelo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/operacionesVehiculos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/privilegio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/tipoVehiculo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/usuarioSistema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/model/vehiculo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/HelloWorld.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/HomePage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/WicketApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/vista/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/HeaderPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/HeaderPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/HeaderPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/HeaderPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/myapp/wicket/vista/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/empleado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/estadoCivil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/marca.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/modelo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/privilegioUsuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/sexo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/tipoVehiculo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/usuarioSistema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/vehiculo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/HeaderPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/HeaderPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/HeaderPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/HeaderPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myapp/wicket/vista/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/entities/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/entities/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/modelo/empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/modelo/empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/util/KrppHibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT/WEB-INF/classes/com/parqueo/krpp/util/KrppHibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parqueo/krpp/modelo/empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parqueo/krpp/modelo/empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/parqueo/krpp/util/KrppHibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/parqueo/krpp/util/KrppHibernateUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,7 +39,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="html" value="3" />
+          <entry key="html" value="7" />
           <entry key="java" value="13" />
           <entry key="xml" value="4" />
         </counts>
@@ -87,7 +47,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="HTML" value="3" />
+          <entry key="HTML" value="7" />
           <entry key="JAVA" value="13" />
           <entry key="XML" value="4" />
         </counts>
@@ -95,12 +55,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
+          <entry key="html" value="23" />
           <entry key="java" value="995" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="23" />
           <entry key="JAVA" value="995" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="9" />
@@ -117,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
-              <caret line="49" column="52" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="52" />
+              <caret line="49" column="52" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -125,17 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="147">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -154,45 +107,45 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/LoginPage.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/vista/LoginPage.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="81" />
+              <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Usuario.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Modelo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/TemplatePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding>
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-754" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HeaderPanel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -200,22 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/vista/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="31" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/UsuarioApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1598#1599#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1638">
+              <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="31" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -228,6 +167,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Hello World</find>
+      <find>sb-ad</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -245,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Modelo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/UsuarioApi.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/LoginPage.html" />
       </list>
     </option>
   </component>
@@ -415,7 +361,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538540025752" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538624875751" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -492,7 +438,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16393442" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.49016392" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -601,7 +547,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="27" selection-end-column="30" />
+          <caret line="25" selection-start-line="25" selection-end-line="27" selection-end-column="30" />
           <folding>
             <element signature="e#945#946#0" expanded="true" />
             <element signature="e#975#976#0" expanded="true" />
@@ -615,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/vista/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="31" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/UsuarioApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -631,13 +570,6 @@
             <element signature="e#1539#1540#0" expanded="true" />
             <element signature="e#1598#1599#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -661,14 +593,54 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="49" column="52" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="52" />
+          <caret line="49" column="52" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/vista/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1638">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="31" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/LoginPage.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/vista/LoginPage.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="81" />
+          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/TemplatePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-754" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HeaderPanel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
