@@ -12,23 +12,12 @@ import org.apache.wicket.markup.html.basic.Label;
 
 public class TemplatePage extends WebPage {
     private static final long serialVersionUID = 5218374612129395403L;
-    public static final String CONTENT_ID = "contentComponent";
-    private Component headerPanel;
-    private Component menuPanel;
-    private Component footerPanel;
+    private Component navigationPanel;
     public TemplatePage(){
-        add(headerPanel = new HeaderPanel("headerPanel"));
-        add(footerPanel = new FooterPanel("footerPanel"));
-        add(new Label(CONTENT_ID, "Put your content here"));
+        add(navigationPanel = new NavigationPanel("navigationPanel"));
     }
-    
-    public Component getHeaderPanel() {
-        return headerPanel;
-    }
-    public Component getMenuPanel() {
-        return menuPanel;
-    }
-    public Component getFooterPanel() {
-        return footerPanel;
+
+    public Component getNavigationPanel() {
+        return navigationPanel;
     }
 }

@@ -13,7 +13,6 @@ public class HomePage extends TemplatePage{
     
     public HomePage(){
         super();        
-        replace(new Label(CONTENT_ID, "Hello World!"));
         add(new Label("msg", new Model<String>(UserSession.getInstance().getuSerModel().getName())));
     }
 }

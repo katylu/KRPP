@@ -1,6 +1,5 @@
 package com.parqueo.krpp.api;
 
-import com.myapp.wicket.LoginPage;
 import com.parqueo.krpp.entities.Usuario;
 import com.parqueo.krpp.util.KrppHibernateUtil;
 import org.apache.log4j.Logger;
@@ -9,19 +8,18 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import javax.persistence.NoResultException;
-import java.util.List;
 
 public class UsuarioApi {
 
     protected final SessionFactory sessionFactory = KrppHibernateUtil.getSessionFactory();
     final static Logger logger = Logger.getLogger(UsuarioApi.class);
-    private static UsuarioApi usuarioApi;
+    private static UsuarioApi instance;
 
     public static UsuarioApi getInstance(){
-        if(usuarioApi == null){
-            usuarioApi = new UsuarioApi();
+        if(instance == null){
+            instance = new UsuarioApi();
         }
-        return usuarioApi;
+        return instance;
     }
 
     //consulta si existe un usuario

@@ -1,38 +1,22 @@
-<html>
-<head>
-</head>
-<body>
-    <div style="margin: auto; width: 40%;">
-        <wicket:extend>
-            <div class="container-fluid text-center">
-                <div class="row content">
-                    <div class="col-sm-2 sidenav">
-                        <p>
-                            <a href="#">Link 1 here</a>
-                        </p>
-                        <p>
-                            <a href="#">Link 2 here</a>
-                        </p>
-                    </div>
-                    <div class="col-sm-8 text-left">
-                        <h1>Welcome</h1>
-                        <p>
-                            <span wicket:id="contentComponent" id="contentComponent">Message
-                                goes here</span>
-                            <span wicket:id ="msg"></span>
-                        </p>
-                    </div>
-                    <div class="col-sm-2 sidenav">
-                        <div class="well">
-                            <p>Help Tip1</p>
-                        </div>
-                        <div class="well">
-                            <p>Help Tip2</p>
-                        </div>
-                    </div>
+<wicket:extend>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>KRPP - Sistema de Vehiculos</h1>
+                    <p>
+                        <span wicket:id="msg"></span>
+                    </p>
                 </div>
+                <!-- /.col-lg-12 -->
             </div>
-        </wicket:extend>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
     </div>
-</body>
-</html>
+    <!-- /#page-wrapper -->
+
+
+</wicket:extend>

@@ -432,3 +432,9 @@ table.dataTable thead .sorting:after {
     border-left-width: 0;
   }
 }
+
+.wicket-a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}

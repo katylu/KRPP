@@ -24,7 +24,7 @@ public class LoginPage extends WebPage {
 
    private static final long serialVersionUID = 5946349607750478191L;
 
-    final static Logger logger = Logger.getLogger(com.myapp.wicket.vista.LoginPage.class);
+    final static Logger logger = Logger.getLogger(com.myapp.wicket.LoginPage.class);
   
     public LoginPage() {
 
@@ -50,7 +50,7 @@ public class LoginPage extends WebPage {
                     setResponsePage(HomePage.class);
                 }else{
                     logger.info("Usuario no encontrado");
-                    error("Error el nombre de usuario o la contraseña son invalidas");
+                    error("Error: El nombre de usuario o la contraseña son invalidas");
                 }
 
             }
