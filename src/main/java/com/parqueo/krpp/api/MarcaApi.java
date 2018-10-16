@@ -52,7 +52,7 @@ public class MarcaApi {
         try {
 
             s = beginTransaction();
-            //guardamos la marca
+            //guardamos la entidad
             s.persist(marca);
             return true;
         } catch (Throwable t) {
@@ -73,7 +73,7 @@ public class MarcaApi {
         try {
 
             s = beginTransaction();
-            //guardamos la marca
+            //actualizamos la entidad
             Marca original = s.find(Marca.class, marca.getIdMarca());
             original.setNombreMarca(marca.getNombreMarca());
 
@@ -97,7 +97,7 @@ public class MarcaApi {
         try {
 
             s = beginTransaction();
-            //guardamos la marca
+            //obtenemos la entidad
             Marca marca = s.find(Marca.class, marcaId);
 
             return marca;
@@ -112,6 +112,29 @@ public class MarcaApi {
             }
         }
         return null;
+    }
+
+    public boolean deleteById(Integer marcaId) {
+        Session s = null;
+        boolean wasRollback = false;
+        try {
+
+            s = beginTransaction();
+            //eliminamos la entidad
+            Marca marca = s.find(Marca.class, marcaId);
+            s.delete(marca);
+            return true;
+
+        } catch (Throwable t) {
+            wasRollback = true;
+        } finally {
+            try {
+                endTransaction(s, wasRollback);
+            } catch (Throwable t) {
+
+            }
+        }
+        return false;
     }
 
 

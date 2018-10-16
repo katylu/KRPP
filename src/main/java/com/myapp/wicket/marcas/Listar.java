@@ -9,11 +9,14 @@ package com.myapp.wicket.marcas;
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.api.MarcaApi;
 import com.parqueo.krpp.entities.Marca;
+import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
@@ -36,13 +39,28 @@ public class Listar extends TemplatePage {
             @Override
             protected void populateItem(ListItem<Marca> item) {
                 Marca m = item.getModelObject();
+                //columnas del listado
                 item.add(new Label("nombreMarca", new PropertyModel(item.getModel(), "nombreMarca")));
                 item.add(new Label("idMarca", new PropertyModel(item.getModel(), "idMarca")));
 
+                //link para editar
                 PageParameters pageParameters = new PageParameters();
                 pageParameters.add("marca", m.getIdMarca());
                 item.add(new BookmarkablePageLink<Void>("editLink",
                         com.myapp.wicket.marcas.Editar.class, pageParameters));
+
+                //link para eliminar
+                Link<Integer> deleteLink = new Link<Integer>("deleteLink",
+                        new Model<Integer>(m.getIdMarca())) {
+                    @Override
+                    public void onClick() {
+                        MarcaApi.getInstance().deleteById(getModelObject());
+                    }
+                };
+                deleteLink.add(new AttributeModifier("onclick",
+                        "return confirm('Esta seguro de eliminar la marca "
+                                + m.getNombreMarca().replace("\"", "\\\"")+ "?');"));
+                item.add(deleteLink);
             }
 
         });
