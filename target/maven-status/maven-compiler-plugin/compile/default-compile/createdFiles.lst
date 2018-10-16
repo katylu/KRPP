@@ -1,11 +1,12 @@
 com\myapp\wicket\Vehiculos.class
+com\myapp\wicket\marcas\Editar.class
 com\myapp\wicket\marcas\Listar$1.class
 com\parqueo\krpp\modelo\marca.class
+com\myapp\wicket\marcas\Editar$1.class
 com\myapp\wicket\Application.class
 com\parqueo\krpp\util\KrppHibernateUtil.class
 com\parqueo\krpp\api\MarcaApi.class
 com\myapp\wicket\marcas\Crear$1.class
-com\myapp\wicket\Marcas$1.class
 com\parqueo\krpp\api\UsuarioApi.class
 com\myapp\wicket\HomePage.class
 com\parqueo\krpp\modelo\persona.class
@@ -15,7 +16,6 @@ com\myapp\wicket\marcas\Listar.class
 com\myapp\wicket\Usuarios.class
 com\parqueo\krpp\modelo\modelo.class
 com\parqueo\krpp\modelo\vehiculo.class
-com\myapp\wicket\Marcas.class
 com\myapp\wicket\NavigationPanel$1.class
 com\parqueo\krpp\entities\Usuario.class
 com\myapp\wicket\TemplatePage.class
@@ -34,4 +34,5 @@ com\myapp\wicket\USerModel.class
 com\parqueo\krpp\entities\Config.class
 com\myapp\wicket\NavigationPanel.class
 com\parqueo\krpp\modelo\empleado.class
+com\parqueo\krpp\modelo\MarcasModel.class
 com\parqueo\krpp\modelo\sexo.class

@@ -9,40 +9,41 @@ package com.myapp.wicket.marcas;
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.api.MarcaApi;
 import com.parqueo.krpp.entities.Marca;
+import com.parqueo.krpp.modelo.MarcasModel;
 import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.Model;
+import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 public class Editar extends TemplatePage {
     private static final long serialVersionUID = -7465108755276912649L;
     final static Logger logger = Logger.getLogger(com.myapp.wicket.LoginPage.class);
     public Editar(final PageParameters params){
-        final Long taskId = params.get("marca").toLong();
+        final Integer marcaId = params.get("marca").toInteger();
+        Marca marca = MarcaApi.getInstance().getById(marcaId);
+
+        final MarcasModel marcasModel = new MarcasModel(marca.getIdMarca(), marca.getNombreMarca());
+
+        Form<Object> form = new Form<Object>("form");
+
+        form.add(new TextField<String>("nombreMarca", new PropertyModel<String>(marcasModel, "nombreMarca")));
 
 
-        final TextField<String> nombreMarcaField = new TextField<String>("nombreMarca", Model.<String>of(""));
-        nombreMarcaField.setRequired(true);
+        form.add(new Button("submit") {
+            private static final long serialVersionUID = -8676092495300239679L;
 
-
-        Form form = new Form("form") {
             @Override
-            protected void onSubmit() {
-                //System.out.print(getModelObject());
+            public void onSubmit() {
                 //guardamos la marca
-                Marca marca = new Marca(nombreMarcaField.getModelObject());
+                Marca marca = new Marca(marcasModel.getIdMarca(), marcasModel.getNombreMarca());
 
-                MarcaApi.getInstance().save(marca);
+                MarcaApi.getInstance().update(marca);
                 setResponsePage(Listar.class);
             }
-        };
-
-        form.add(nombreMarcaField);
-
-        Button submit = new Button("submit");
-        form.add(submit);
+        });
 
         add(form);
     }

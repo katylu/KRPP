@@ -2,13 +2,14 @@
 package com.parqueo.krpp.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "MARCA")
 @NamedQueries({
    @NamedQuery(name = "Marca.getAll", query = "SELECT c FROM Marca c "),
 })
-public class Marca {
+public class Marca implements Serializable{
 
     @Id
     @Column(name = "ID")
