@@ -1,4 +1,4 @@
-package com.parqueo.krpp.api;
+package com.parqueo.krpp.repository;
 
 import com.parqueo.krpp.entities.Usuario;
 import com.parqueo.krpp.util.KrppHibernateUtil;
@@ -9,15 +9,15 @@ import org.hibernate.SessionFactory;
 
 import javax.persistence.NoResultException;
 
-public class UsuarioApi {
+public class UsuarioRepository {
 
     protected final SessionFactory sessionFactory = KrppHibernateUtil.getSessionFactory();
-    final static Logger logger = Logger.getLogger(UsuarioApi.class);
-    private static UsuarioApi instance;
+    final static Logger logger = Logger.getLogger(UsuarioRepository.class);
+    private static UsuarioRepository instance;
 
-    public static UsuarioApi getInstance(){
+    public static UsuarioRepository getInstance(){
         if(instance == null){
-            instance = new UsuarioApi();
+            instance = new UsuarioRepository();
         }
         return instance;
     }

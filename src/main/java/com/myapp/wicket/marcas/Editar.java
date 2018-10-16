@@ -7,14 +7,13 @@
 package com.myapp.wicket.marcas;
 
 import com.myapp.wicket.TemplatePage;
-import com.parqueo.krpp.api.MarcaApi;
+import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.entities.Marca;
 import com.parqueo.krpp.modelo.MarcasModel;
 import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
@@ -23,7 +22,7 @@ public class Editar extends TemplatePage {
     final static Logger logger = Logger.getLogger(com.myapp.wicket.LoginPage.class);
     public Editar(final PageParameters params){
         final Integer marcaId = params.get("marca").toInteger();
-        Marca marca = MarcaApi.getInstance().getById(marcaId);
+        Marca marca = MarcaRepository.getInstance().getById(marcaId);
 
         final MarcasModel marcasModel = new MarcasModel(marca.getIdMarca(), marca.getNombreMarca());
 
@@ -40,7 +39,7 @@ public class Editar extends TemplatePage {
                 //guardamos la marca
                 Marca marca = new Marca(marcasModel.getIdMarca(), marcasModel.getNombreMarca());
 
-                MarcaApi.getInstance().update(marca);
+                MarcaRepository.getInstance().update(marca);
                 setResponsePage(Listar.class);
             }
         });

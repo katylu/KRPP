@@ -7,7 +7,7 @@
 package com.myapp.wicket.marcas;
 
 import com.myapp.wicket.TemplatePage;
-import com.parqueo.krpp.api.MarcaApi;
+import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.entities.Marca;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
@@ -21,7 +21,6 @@ import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Listar extends TemplatePage {
@@ -32,7 +31,7 @@ public class Listar extends TemplatePage {
         super();
 
         //obtenemos las marcas de la bd
-        List<Marca> marcas = MarcaApi.getInstance().getAll();
+        List<Marca> marcas = MarcaRepository.getInstance().getAll();
 
 
         add(new ListView<Marca>("marcas", marcas) {
@@ -54,7 +53,7 @@ public class Listar extends TemplatePage {
                         new Model<Integer>(m.getIdMarca())) {
                     @Override
                     public void onClick() {
-                        MarcaApi.getInstance().deleteById(getModelObject());
+                        MarcaRepository.getInstance().deleteById(getModelObject());
                     }
                 };
                 deleteLink.add(new AttributeModifier("onclick",
