@@ -4,11 +4,11 @@
  * Created on 21 de septiembre de 2018, 21:43
  */
 
-package com.myapp.wicket.marcas;
+package com.myapp.wicket.modelos;
 
 import com.myapp.wicket.TemplatePage;
-import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.entities.Marca;
+import com.parqueo.krpp.repository.MarcaRepository;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
@@ -31,7 +31,7 @@ public class Listar extends TemplatePage {
         super();
 
         //agregamos el enlace a la pagina de creacion
-        add(new BookmarkablePageLink<com.myapp.wicket.marcas.Crear>("Marca.Crear" ,com.myapp.wicket.marcas.Crear.class));
+        add(new BookmarkablePageLink<Crear>("Marca.Crear" ,Crear.class));
 
         //obtenemos las marcas de la bd
         List<Marca> marcas = MarcaRepository.getInstance().getAll();
@@ -48,7 +48,7 @@ public class Listar extends TemplatePage {
                 PageParameters pageParameters = new PageParameters();
                 pageParameters.add("marca", m.getIdMarca());
                 item.add(new BookmarkablePageLink<Void>("editLink",
-                        com.myapp.wicket.marcas.Editar.class, pageParameters));
+                        Editar.class, pageParameters));
 
                 //link para eliminar
                 Link<Integer> deleteLink = new Link<Integer>("deleteLink",

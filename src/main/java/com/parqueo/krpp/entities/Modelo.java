@@ -8,6 +8,8 @@ import javax.persistence.*;
 public class Modelo {
     @Id
     @Column(name = "ID")
+    @SequenceGenerator(name="modelo_seq", initialValue=1, allocationSize=1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="modelo_seq")
     private Integer idModelo;
 
     @Column(name="NOMBRE_MODELO")

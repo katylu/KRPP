@@ -7,7 +7,7 @@
                 <div class="col-lg-12">
                     <center>
                         <h1>Vista de Marcas
-                            <button wicket:id="Marca.Crear" type="button" tooltip="Agregar Marca" tooltip-placement="right"
+                            <button wicket:id="Modelo.Crear" type="button" tooltip="Agregar Modelo" tooltip-placement="right"
                                     ng-click="add()" class="btn btn-sm btn-success">
                                 <i class="fa fa-plus-circle fa-fw"></i>
                             </button>
@@ -37,9 +37,10 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr wicket:id="marcas">
-                                    <td wicket:id="idMarca"></td>
-                                    <td wicket:id="nombreMarca"></td>
+                                <tr wicket:id="modelos">
+                                    <td wicket:id="idModelo"></td>
+                                    <td wicket:id="nombreModelo"></td>
+                                    <td wicket:id="nombreModelo"></td>
                                     <td>
                                         <button type="button" ng-click="edit(row)" wicket:id="editLink"
                                                 class="btn btn-sm btn-info">
