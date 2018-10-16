@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5425a38c-3857-4315-b753-08af07a7fb98" name="Default Changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/KRPP-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/UsuarioApi.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java" afterPath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/MarcaRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/UsuarioApi.java" afterPath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/UsuarioRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Crear.java" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Crear.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Editar.java" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Editar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Listar.java" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Listar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java" afterPath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/marcas/Listar.html" afterPath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/marcas/Listar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,9 +78,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Editar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="e#1117#1125#0" expanded="true" />
+                <element signature="e#1100#1108#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,11 +100,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Listar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="183">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
-                <element signature="e#974#989#0" expanded="true" />
-                <element signature="e#1966#1975#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
+                <element signature="e#958#973#0" expanded="true" />
+                <element signature="e#1957#1966#0" expanded="true" />
+                <element signature="e#2221#2222#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,11 +155,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarcaApi.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java">
+      <file leaf-file-name="MarcaRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/MarcaRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="1649">
+              <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Crear.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
-              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="38" />
+              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -246,6 +256,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/marcas/Listar.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Listar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/MarcaApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/MarcaRepository.java" />
       </list>
     </option>
   </component>
@@ -380,7 +392,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="krpp" type="462c0819:PsiDirectoryNode" />
-              <item name="modelo" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KRPP" type="b2602c69:ProjectViewProjectNode" />
@@ -571,27 +583,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Editar.java</url>
-          <line>24</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Listar.java</url>
-          <line>56</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="6" />
@@ -632,7 +632,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/FooterPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/style.css" />
     <entry file="jar://$MAVEN_REPOSITORY$/unknown/binary/wicket-core-6.0.0/SNAPSHOT/wicket-core-6.0.0-SNAPSHOT.jar!/org/apache/wicket/MarkupContainer.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/UsuarioApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/UsuarioRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
           <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
@@ -833,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Marca.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -856,9 +848,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Editar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#1117#1125#0" expanded="true" />
+            <element signature="e#1100#1108#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -882,7 +874,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Crear.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="38" />
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -924,10 +916,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/api/MarcaApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/MarcaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state relative-caret-position="1649">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -935,12 +927,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/marcas/Listar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#974#989#0" expanded="true" />
-            <element signature="e#1966#1975#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
+            <element signature="e#958#973#0" expanded="true" />
+            <element signature="e#1957#1966#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,23 +7,14 @@
 package com.myapp.wicket.marcas;
 
 import com.myapp.wicket.TemplatePage;
-import com.parqueo.krpp.api.MarcaApi;
+import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.entities.Marca;
 import com.parqueo.krpp.modelo.MarcasModel;
 import org.apache.log4j.Logger;
-import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
-import org.apache.wicket.markup.html.form.PasswordTextField;
 import org.apache.wicket.markup.html.form.TextField;
-import org.apache.wicket.markup.html.list.ListItem;
-import org.apache.wicket.markup.html.list.ListView;
-import org.apache.wicket.model.IModel;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Crear extends TemplatePage {
     private static final long serialVersionUID = -7465108755276912649L;
@@ -45,7 +36,7 @@ public class Crear extends TemplatePage {
                 //guardamos la marca
                 Marca marca = new Marca(marcasModel.getNombreMarca());
 
-                MarcaApi.getInstance().save(marca);
+                MarcaRepository.getInstance().save(marca);
                 setResponsePage(Listar.class);
             }
         });

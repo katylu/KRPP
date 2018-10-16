@@ -1,22 +1,15 @@
 
 package com.myapp.wicket;
 
-import com.parqueo.krpp.api.UsuarioApi;
-import com.parqueo.krpp.util.KrppHibernateUtil;
+import com.parqueo.krpp.repository.UsuarioRepository;
 import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.PasswordTextField;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
-import org.apache.wicket.request.mapper.parameter.PageParameters;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 
 
 public class LoginPage extends WebPage {
@@ -44,7 +37,7 @@ public class LoginPage extends WebPage {
                 super.onSubmit();
         
 
-                if(UsuarioApi.getInstance().existeUsuario(userModel.getName(), userModel.getPass())){
+                if(UsuarioRepository.getInstance().existeUsuario(userModel.getName(), userModel.getPass())){
                     logger.info("Usuario logueado correctamente");
                     UserSession.getInstance().setuSerModel(userModel);
                     setResponsePage(HomePage.class);
