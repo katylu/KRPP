@@ -29,5 +29,5 @@ public class marca {
     public void setNombreMarca(String nombreMarca) {
         this.nombreMarca = nombreMarca;
     }
-    
+
 }

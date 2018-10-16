@@ -9,10 +9,12 @@ package com.myapp.wicket.marcas;
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.api.MarcaApi;
 import com.parqueo.krpp.entities.Marca;
+import com.parqueo.krpp.modelo.MarcasModel;
 import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.PasswordTextField;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
@@ -28,26 +30,25 @@ public class Crear extends TemplatePage {
     final static Logger logger = Logger.getLogger(com.myapp.wicket.LoginPage.class);
     public Crear(){
 
-        final TextField<String> nombreMarcaField = new TextField<String>("nombreMarca", Model.<String>of(""));
-        nombreMarcaField.setRequired(true);
+        final MarcasModel marcasModel = new MarcasModel();
+
+        Form<Object> form = new Form<Object>("form");
+
+        form.add(new TextField<String>("nombreMarca", new PropertyModel<String>(marcasModel, "nombreMarca")));
 
 
-        Form form = new Form("form") {
+        form.add(new Button("submit") {
+            private static final long serialVersionUID = -8676092495300239679L;
+
             @Override
-            protected void onSubmit() {
-                //System.out.print(getModelObject());
+            public void onSubmit() {
                 //guardamos la marca
-                Marca marca = new Marca(nombreMarcaField.getModelObject());
+                Marca marca = new Marca(marcasModel.getNombreMarca());
 
                 MarcaApi.getInstance().save(marca);
                 setResponsePage(Listar.class);
             }
-        };
-
-        form.add(nombreMarcaField);
-
-        Button submit = new Button("submit");
-        form.add(submit);
+        });
 
         add(form);
     }

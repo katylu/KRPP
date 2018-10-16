@@ -1,14 +1,12 @@
 package com.parqueo.krpp.api;
 
 import com.parqueo.krpp.entities.Marca;
-import com.parqueo.krpp.entities.Usuario;
 import com.parqueo.krpp.util.KrppHibernateUtil;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import javax.persistence.NoResultException;
 import java.util.List;
 
 public class MarcaApi {
@@ -54,9 +52,79 @@ public class MarcaApi {
         try {
 
             s = beginTransaction();
-            //guardamos la marca
+            //guardamos la entidad
             s.persist(marca);
             return true;
+        } catch (Throwable t) {
+            wasRollback = true;
+        } finally {
+            try {
+                endTransaction(s, wasRollback);
+            } catch (Throwable t) {
+
+            }
+        }
+        return false;
+    }
+
+    public boolean update(Marca marca) {
+        Session s = null;
+        boolean wasRollback = false;
+        try {
+
+            s = beginTransaction();
+            //actualizamos la entidad
+            Marca original = s.find(Marca.class, marca.getIdMarca());
+            original.setNombreMarca(marca.getNombreMarca());
+
+            s.merge(original);
+            return true;
+        } catch (Throwable t) {
+            wasRollback = true;
+        } finally {
+            try {
+                endTransaction(s, wasRollback);
+            } catch (Throwable t) {
+
+            }
+        }
+        return false;
+    }
+
+    public Marca getById(Integer marcaId) {
+        Session s = null;
+        boolean wasRollback = false;
+        try {
+
+            s = beginTransaction();
+            //obtenemos la entidad
+            Marca marca = s.find(Marca.class, marcaId);
+
+            return marca;
+
+        } catch (Throwable t) {
+            wasRollback = true;
+        } finally {
+            try {
+                endTransaction(s, wasRollback);
+            } catch (Throwable t) {
+
+            }
+        }
+        return null;
+    }
+
+    public boolean deleteById(Integer marcaId) {
+        Session s = null;
+        boolean wasRollback = false;
+        try {
+
+            s = beginTransaction();
+            //eliminamos la entidad
+            Marca marca = s.find(Marca.class, marcaId);
+            s.delete(marca);
+            return true;
+
         } catch (Throwable t) {
             wasRollback = true;
         } finally {
