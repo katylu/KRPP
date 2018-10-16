@@ -38,7 +38,7 @@ public class Application extends WebApplication
     {
             super.init();
             // add your configuration here           
-    
+
             
     }
 }

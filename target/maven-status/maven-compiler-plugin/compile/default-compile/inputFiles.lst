@@ -6,6 +6,7 @@ C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\Usuarios.java
 C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\HomePage.java
 C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\NavigationPanel.java
 C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\Marcas.java
+C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\marcas\Listar.java
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\entities\Modelo.java
 C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\LoginPage.java
 C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\USerModel.java
@@ -16,6 +17,7 @@ C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\entities\Persona.ja
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\modelo\departamento.java
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\modelo\sexo.java
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\modelo\estadoCivil.java
+C:\sources\github\katylu\KRPP\src\main\java\com\myapp\wicket\marcas\Crear.java
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\modelo\marca.java
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\util\KrppHibernateUtil.java
 C:\sources\github\katylu\KRPP\src\main\java\com\parqueo\krpp\entities\Usuario.java

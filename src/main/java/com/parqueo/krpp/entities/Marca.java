@@ -12,6 +12,8 @@ public class Marca {
 
     @Id
     @Column(name = "ID")
+    @SequenceGenerator(name="marca_seq", initialValue=1, allocationSize=1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="marca_seq")
     private Integer idMarca;
 
     @Column(name = "NOMBRE_MARCA")
@@ -22,6 +24,10 @@ public class Marca {
 
     public Marca(Integer idMarca, String nombreMarca) {
         this.idMarca = idMarca;
+        this.nombreMarca = nombreMarca;
+    }
+
+    public Marca(String nombreMarca) {
         this.nombreMarca = nombreMarca;
     }
 
@@ -40,5 +46,12 @@ public class Marca {
     public void setNombreMarca(String nombreMarca) {
         this.nombreMarca = nombreMarca;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Marca{" +
+                "idMarca=" + idMarca +
+                ", nombreMarca='" + nombreMarca + '\'' +
+                '}';
+    }
 }

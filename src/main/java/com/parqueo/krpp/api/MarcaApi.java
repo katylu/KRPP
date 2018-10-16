@@ -48,6 +48,27 @@ public class MarcaApi {
         return null;
     }
 
+    public boolean save(Marca marca) {
+        Session s = null;
+        boolean wasRollback = false;
+        try {
+
+            s = beginTransaction();
+            //guardamos la marca
+            s.persist(marca);
+            return true;
+        } catch (Throwable t) {
+            wasRollback = true;
+        } finally {
+            try {
+                endTransaction(s, wasRollback);
+            } catch (Throwable t) {
+
+            }
+        }
+        return false;
+    }
+
 
     public Session openSession() {
         return sessionFactory.openSession();

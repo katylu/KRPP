@@ -1,5 +1,7 @@
 package com.myapp.wicket;
 
+import com.myapp.wicket.marcas.Listar;
+import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.panel.Panel;
 
@@ -15,5 +17,9 @@ public class NavigationPanel extends Panel {
                 setResponsePage(LoginPage.class);
             }
         });
+
+        add(new BookmarkablePageLink<com.myapp.wicket.marcas.Listar>("Marca.Listar" ,com.myapp.wicket.marcas.Listar.class));
+        add(new BookmarkablePageLink<com.myapp.wicket.marcas.Crear>("Marca.Crear" ,com.myapp.wicket.marcas.Crear.class));
+
     }
 }
