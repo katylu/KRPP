@@ -84,7 +84,7 @@ public class EmpleadoRepository {
             s.merge(original);
             return true;
         } catch (Throwable t) {
-            wasRollback = true;
+             wasRollback = true;
         } finally {
             try {
                 endTransaction(s, wasRollback);

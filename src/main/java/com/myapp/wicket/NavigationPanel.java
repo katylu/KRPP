@@ -18,6 +18,7 @@ public class NavigationPanel extends Panel {
             }
         });
 
+        add(new BookmarkablePageLink<com.myapp.wicket.marcas.Listar>("Empleado.Listar" ,com.myapp.wicket.empleados.Listar.class));
         add(new BookmarkablePageLink<com.myapp.wicket.marcas.Listar>("Marca.Listar" ,com.myapp.wicket.marcas.Listar.class));
         add(new BookmarkablePageLink<com.myapp.wicket.marcas.Listar>("Modelo.Listar" ,com.myapp.wicket.modelos.Listar.class));
         add(new BookmarkablePageLink<com.myapp.wicket.marcas.Listar>("Vehiculo.Listar" ,com.myapp.wicket.vehiculos.Listar.class));

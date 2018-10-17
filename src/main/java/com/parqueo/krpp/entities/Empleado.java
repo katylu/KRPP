@@ -48,6 +48,15 @@ public class Empleado implements Serializable {
         this.sexo = sexo;
     }
 
+    public Empleado(Integer nroCedula, String nombreCompleto, Date fechaNacimiento, String estadoCivil, String sexo) {
+        this.idEmpleado = idEmpleado;
+        this.nroCedula = nroCedula;
+        this.nombreCompleto = nombreCompleto;
+        this.fechaNacimiento = fechaNacimiento;
+        this.estadoCivil = estadoCivil;
+        this.sexo = sexo;
+    }
+
     public Integer getIdEmpleado() {
         return idEmpleado;
     }
