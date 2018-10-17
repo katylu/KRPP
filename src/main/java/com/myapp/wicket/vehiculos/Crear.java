@@ -4,35 +4,28 @@
  * Created on 21 de septiembre de 2018, 21:43
  */
 
-package com.myapp.wicket.modelos;
+package com.myapp.wicket.vehiculos;
 
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.entities.Marca;
 import com.parqueo.krpp.entities.Modelo;
-import com.parqueo.krpp.modelo.MarcasModel;
 import com.parqueo.krpp.modelo.ModelosModel;
 import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.repository.ModeloRepository;
 import org.apache.log4j.Logger;
-import org.apache.wicket.extensions.markup.html.form.select.SelectOption;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
-import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Editar extends TemplatePage {
+public class Crear extends TemplatePage {
     private static final long serialVersionUID = -7465108755276912649L;
     final static Logger logger = Logger.getLogger(com.myapp.wicket.LoginPage.class);
-    public Editar(final PageParameters params){
-        final Integer modeloId = params.get("modelo").toInteger();
-        Modelo modelo = ModeloRepository.getInstance().getById(modeloId);
+    public Crear(){
 
-        MarcasModel marcasModel = modelo.getMarca().toModel();
-
-        final ModelosModel modelosModel = modelo.toModel();
+        final ModelosModel modelosModel = new ModelosModel();
 
         Form<Object> form = new Form<Object>("form");
 
@@ -54,7 +47,7 @@ public class Editar extends TemplatePage {
                 Marca marca = MarcaRepository.getInstance().getById(modelosModel.getMarca().getIdMarca());
                 Modelo modelo = new Modelo(modelosModel.getIdModelo(), modelosModel.getNombreModelo(), marca);
 
-                ModeloRepository.getInstance().update(modelo);
+                ModeloRepository.getInstance().save(modelo);
                 setResponsePage(Listar.class);
             }
         });

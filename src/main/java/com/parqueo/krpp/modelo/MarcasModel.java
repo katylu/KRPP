@@ -5,18 +5,20 @@
  */
 package com.parqueo.krpp.modelo;
 
+import org.apache.wicket.model.IModel;
+
 import java.io.Serializable;
+import java.util.List;
 
 /**
  *
  * @author Usuario
  */
-public class MarcasModel implements Serializable{
+public class MarcasModel implements Serializable {
     private static final long serialVersionUID = -5719996440273150534L;
 
     private Integer idMarca;
     private String nombreMarca;
-
 
     public MarcasModel(Integer idMarca, String nombreMarca) {
         this.idMarca = idMarca;
@@ -42,4 +44,6 @@ public class MarcasModel implements Serializable{
     public void setNombreMarca(String nombreMarca) {
         this.nombreMarca = nombreMarca;
     }
+
+
 }

@@ -4,7 +4,7 @@
  * Created on 21 de septiembre de 2018, 21:43
  */
 
-package com.myapp.wicket.modelos;
+package com.myapp.wicket.vehiculos;
 
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.entities.Marca;
@@ -32,7 +32,7 @@ public class Listar extends TemplatePage {
         super();
 
         //agregamos el enlace a la pagina de creacion
-        add(new BookmarkablePageLink<Crear>("Modelo.Crear" ,Crear.class));
+        add(new BookmarkablePageLink<Crear>("Modelo.Crear" , Crear.class));
 
         //obtenemos las marcas de la bd
         List<Modelo> modelos = ModeloRepository.getInstance().getAll();

@@ -4,7 +4,7 @@
  * Created on 21 de septiembre de 2018, 21:43
  */
 
-package com.myapp.wicket.modelos;
+package com.myapp.wicket.vehiculos;
 
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.entities.Marca;
@@ -14,7 +14,6 @@ import com.parqueo.krpp.modelo.ModelosModel;
 import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.repository.ModeloRepository;
 import org.apache.log4j.Logger;
-import org.apache.wicket.extensions.markup.html.form.select.SelectOption;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;

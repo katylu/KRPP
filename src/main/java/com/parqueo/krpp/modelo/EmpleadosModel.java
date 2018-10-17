@@ -1,39 +1,44 @@
 
-package com.parqueo.krpp.entities;
+package com.parqueo.krpp.modelo;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.*;
 
 @Entity
-@Table(name = "PERSONA")
-public class Persona implements Serializable {
+@Table(name = "EMPLEADO")
+@NamedQueries({
+        @NamedQuery(name = "Empleado.getAll", query = "SELECT c FROM Empleado c "),
+})
+public class EmpleadosModel implements Serializable {
     @Id
     @Column(name = "ID")
-    private Integer idPersona;
+    @SequenceGenerator(name="empleado_seq", initialValue=1, allocationSize=1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="empleado_seq")
+    private Integer idEmpleado;
 
     @Column(name="NRO_CEDULA")
     private Integer nroCedula;
-    
+
     @Column(name="NOMBRE_COMPLETO")
     private String nombreCompleto;
-      
+
     @Column(name="FECHA_NACIMIENTO")
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(TemporalType.DATE)
     private Date fechaNacimiento;
-    
+
     @Column(name="ESTADO_CIVIL")
     private String estadoCivil;
-    
+
     @Column(name="SEXO")
     private String sexo;
-    
 
-    public Persona() {
+
+    public EmpleadosModel() {
     }
 
-    public Persona(Integer idPersona, Integer nroCedula, String nombreCompleto, Date fechaNacimiento, String estadoCivil, String sexo) {
-        this.idPersona = idPersona;
+    public EmpleadosModel(Integer idEmpleado, Integer nroCedula, String nombreCompleto, Date fechaNacimiento, String estadoCivil, String sexo) {
+        this.idEmpleado = idEmpleado;
         this.nroCedula = nroCedula;
         this.nombreCompleto = nombreCompleto;
         this.fechaNacimiento = fechaNacimiento;
@@ -41,8 +46,8 @@ public class Persona implements Serializable {
         this.sexo = sexo;
     }
 
-    public Integer getIdPersona() {
-        return idPersona;
+    public Integer getIdEmpleado() {
+        return idEmpleado;
     }
 
     public Integer getNroCedula() {
@@ -65,8 +70,8 @@ public class Persona implements Serializable {
         return sexo;
     }
 
-    public void setIdPersona(Integer idPersona) {
-        this.idPersona = idPersona;
+    public void setIdEmpleado(Integer idEmpleado) {
+        this.idEmpleado = idEmpleado;
     }
 
     public void setNroCedula(Integer nroCedula) {
@@ -89,5 +94,15 @@ public class Persona implements Serializable {
         this.sexo = sexo;
     }
 
-
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "idEmpleado=" + idEmpleado +
+                ", nroCedula=" + nroCedula +
+                ", nombreCompleto='" + nombreCompleto + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", estadoCivil='" + estadoCivil + '\'' +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
 }
