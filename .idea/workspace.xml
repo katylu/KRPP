@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5425a38c-3857-4315-b753-08af07a7fb98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/NavigationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/wicket/NavigationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/entities/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/EmpleadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/EmpleadoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/NavigationPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/NavigationPanel.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +27,7 @@
         <counts>
           <entry key="class" value="7" />
           <entry key="css" value="7" />
-          <entry key="html" value="43" />
+          <entry key="html" value="44" />
           <entry key="java" value="91" />
           <entry key="js" value="3" />
           <entry key="xml" value="6" />
@@ -39,7 +37,7 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="43" />
+          <entry key="HTML" value="44" />
           <entry key="JAVA" value="91" />
           <entry key="JavaScript" value="3" />
           <entry key="XML" value="6" />
@@ -49,7 +47,7 @@
         <counts>
           <entry key="css" value="10" />
           <entry key="dummy" value="12" />
-          <entry key="html" value="1223" />
+          <entry key="html" value="1242" />
           <entry key="java" value="4130" />
           <entry key="xml" value="9" />
         </counts>
@@ -57,7 +55,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="10" />
-          <entry key="HTML" value="1223" />
+          <entry key="HTML" value="1242" />
           <entry key="JAVA" value="4130" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="XML" value="9" />
@@ -70,20 +68,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/NavigationPanel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="267" column="103" selection-start-line="267" selection-start-column="103" selection-end-line="267" selection-end-column="103" />
+            <state relative-caret-position="92">
+              <caret line="271" selection-start-line="271" selection-end-line="271" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/vehiculos/Editar.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="36" column="81" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="81" />
+            <state relative-caret-position="153">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#wicket:extend#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/modelo/Marca.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/modelo/marca.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/util/ModelFactory.java" />
@@ -256,6 +256,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/parqueo/krpp/repository/EmpleadoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myapp/wicket/empleados/Editar.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/NavigationPanel.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html" />
       </list>
     </option>
   </component>
@@ -512,7 +513,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539751220386" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539751536770" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -620,7 +621,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" weight="0.25340393" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -629,7 +630,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -685,13 +686,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/unknown/binary/wicket-core-6.0.0/SNAPSHOT/wicket-core-6.0.0-SNAPSHOT.jar!/org/apache/wicket/session/DefaultPageFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/marcas/Editar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -1056,7 +1050,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myapp/wicket/vehiculos/Editar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="36" column="81" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="81" />
+          <caret line="36" column="81" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1121,8 +1115,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/NavigationPanel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="267" column="103" selection-start-line="267" selection-start-column="103" selection-end-line="267" selection-end-column="103" />
+        <state relative-caret-position="92">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/myapp/wicket/HomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#wicket:extend#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
