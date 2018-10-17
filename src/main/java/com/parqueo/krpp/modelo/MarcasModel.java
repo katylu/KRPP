@@ -5,10 +5,7 @@
  */
 package com.parqueo.krpp.modelo;
 
-import org.apache.wicket.model.IModel;
-
 import java.io.Serializable;
-import java.util.List;
 
 /**
  *

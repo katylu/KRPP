@@ -7,12 +7,18 @@
 package com.myapp.wicket.vehiculos;
 
 import com.myapp.wicket.TemplatePage;
+import com.parqueo.krpp.entities.Empleado;
 import com.parqueo.krpp.entities.Marca;
 import com.parqueo.krpp.entities.Modelo;
+import com.parqueo.krpp.entities.Vehiculo;
+import com.parqueo.krpp.modelo.EmpleadosModel;
 import com.parqueo.krpp.modelo.MarcasModel;
 import com.parqueo.krpp.modelo.ModelosModel;
+import com.parqueo.krpp.modelo.VehiculosModel;
+import com.parqueo.krpp.repository.EmpleadoRepository;
 import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.repository.ModeloRepository;
+import com.parqueo.krpp.repository.VehiculoRepository;
 import org.apache.log4j.Logger;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.model.Model;
@@ -26,34 +32,45 @@ public class Editar extends TemplatePage {
     private static final long serialVersionUID = -7465108755276912649L;
     final static Logger logger = Logger.getLogger(com.myapp.wicket.LoginPage.class);
     public Editar(final PageParameters params){
-        final Integer modeloId = params.get("modelo").toInteger();
-        Modelo modelo = ModeloRepository.getInstance().getById(modeloId);
 
-        MarcasModel marcasModel = modelo.getMarca().toModel();
+        final Integer vehiculoId = params.get("vehiculo").toInteger();
+        Vehiculo vehiculo = VehiculoRepository.getInstance().getById(vehiculoId);
 
-        final ModelosModel modelosModel = modelo.toModel();
+        final VehiculosModel vehiculosModel = vehiculo.toModel();
 
         Form<Object> form = new Form<Object>("form");
 
-        form.add(new TextField<String>("nombreModelo", new PropertyModel<String>(modelosModel, "nombreModelo")));
+        form.add(new TextField<String>("chapa", new PropertyModel<String>(vehiculosModel, "chapa")));
+        form.add(new TextField<String>("color", new PropertyModel<String>(vehiculosModel, "color")));
+        form.add(new TextField<String>("anho", new PropertyModel<String>(vehiculosModel, "anho")));
 
-        DropDownChoice ddc = new DropDownChoice("marcas",
-                new PropertyModel(modelosModel, "marca"),
-                new Model(getChoices()),
-                new ChoiceRenderer("nombreMarca", "idMarca")
+        DropDownChoice ddm = new DropDownChoice("modelos",
+                new PropertyModel(vehiculosModel, "modelo"),
+                new Model(getChoicesModelos()),
+                new ChoiceRenderer("nombreModelo", "idModelo")
         );
-        form.add(ddc);
+        form.add(ddm);
+
+        DropDownChoice dde = new DropDownChoice("empleados",
+                new PropertyModel(vehiculosModel, "empleado"),
+                new Model(getChoicesEmpleados()),
+                new ChoiceRenderer("nombreCompleto", "idEmpleado")
+        );
+        form.add(dde);
 
         form.add(new Button("submit") {
             private static final long serialVersionUID = -8676092495300239679L;
 
             @Override
             public void onSubmit() {
-                //guardamos el modelo
-                Marca marca = MarcaRepository.getInstance().getById(modelosModel.getMarca().getIdMarca());
-                Modelo modelo = new Modelo(modelosModel.getIdModelo(), modelosModel.getNombreModelo(), marca);
+                //guardamos el vehiculo
+                Modelo modelo = ModeloRepository.getInstance().getById(vehiculosModel.getModelo().getIdModelo());
+                Empleado empleado = EmpleadoRepository.getInstance().getById(vehiculosModel.getEmpleado().getIdEmpleado());
 
-                ModeloRepository.getInstance().update(modelo);
+                Vehiculo vehiculo = new Vehiculo(vehiculosModel.getIdVehiculo(), vehiculosModel.getChapa(), vehiculosModel.getColor(),
+                        vehiculosModel.getAnho(), modelo, empleado);
+
+                VehiculoRepository.getInstance().update(vehiculo);
                 setResponsePage(Listar.class);
             }
         });
@@ -61,10 +78,19 @@ public class Editar extends TemplatePage {
         add(form);
     }
 
-    private ArrayList getChoices() {
-        List<Marca> marcas = MarcaRepository.getInstance().getAll();
+    private ArrayList getChoicesModelos() {
+        List<Modelo> modelos = ModeloRepository.getInstance().getAll();
         ArrayList list = new ArrayList();
-        for (Marca m: marcas) {
+        for (Modelo m: modelos) {
+            list.add(m.toModel());
+        }
+        return list;
+    }
+
+    private ArrayList getChoicesEmpleados() {
+        List<Empleado> empleados = EmpleadoRepository.getInstance().getAll();
+        ArrayList list = new ArrayList();
+        for (Empleado m: empleados) {
             list.add(m.toModel());
         }
         return list;

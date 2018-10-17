@@ -30,8 +30,6 @@ public class Editar extends TemplatePage {
         final Integer modeloId = params.get("modelo").toInteger();
         Modelo modelo = ModeloRepository.getInstance().getById(modeloId);
 
-        MarcasModel marcasModel = modelo.getMarca().toModel();
-
         final ModelosModel modelosModel = modelo.toModel();
 
         Form<Object> form = new Form<Object>("form");

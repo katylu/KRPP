@@ -1,6 +1,8 @@
 
 package com.parqueo.krpp.entities;
 
+import com.parqueo.krpp.modelo.EmpleadosModel;
+
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
@@ -104,5 +106,10 @@ public class Empleado implements Serializable {
                 ", estadoCivil='" + estadoCivil + '\'' +
                 ", sexo='" + sexo + '\'' +
                 '}';
+    }
+
+    public EmpleadosModel toModel(){
+        return new EmpleadosModel(this.getIdEmpleado(), this.getNroCedula(), this.getNombreCompleto(), this.getFechaNacimiento(),
+                this.getEstadoCivil(), this.getSexo());
     }
 }

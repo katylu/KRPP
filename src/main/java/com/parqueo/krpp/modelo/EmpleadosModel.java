@@ -1,36 +1,22 @@
 
 package com.parqueo.krpp.modelo;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Entity
-@Table(name = "EMPLEADO")
-@NamedQueries({
-        @NamedQuery(name = "Empleado.getAll", query = "SELECT c FROM Empleado c "),
-})
+
 public class EmpleadosModel implements Serializable {
-    @Id
-    @Column(name = "ID")
-    @SequenceGenerator(name="empleado_seq", initialValue=1, allocationSize=1)
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="empleado_seq")
+
     private Integer idEmpleado;
 
-    @Column(name="NRO_CEDULA")
     private Integer nroCedula;
 
-    @Column(name="NOMBRE_COMPLETO")
     private String nombreCompleto;
 
-    @Column(name="FECHA_NACIMIENTO")
-    @Temporal(TemporalType.DATE)
     private Date fechaNacimiento;
 
-    @Column(name="ESTADO_CIVIL")
     private String estadoCivil;
 
-    @Column(name="SEXO")
     private String sexo;
 
 
@@ -96,7 +82,7 @@ public class EmpleadosModel implements Serializable {
 
     @Override
     public String toString() {
-        return "Empleado{" +
+        return "EmpleadosModel{" +
                 "idEmpleado=" + idEmpleado +
                 ", nroCedula=" + nroCedula +
                 ", nombreCompleto='" + nombreCompleto + '\'' +
