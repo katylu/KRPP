@@ -12,6 +12,7 @@ import com.parqueo.krpp.entities.Modelo;
 import com.parqueo.krpp.entities.Vehiculo;
 import com.parqueo.krpp.repository.ModeloRepository;
 import com.parqueo.krpp.repository.VehiculoRepository;
+import com.parqueo.krpp.util.JavascriptEventConfirmation;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
@@ -67,9 +68,8 @@ public class Listar extends TemplatePage {
 
                     }
                 };
-                deleteLink.add(new AttributeModifier("onclick",
-                        "return confirm('Esta seguro de eliminar el vehiculo "
-                                + m.getChapa().replace("\"", "\\\"")+ "?');"));
+                
+                deleteLink.add(new JavascriptEventConfirmation("onclick", "Esta seguro de eliminar el vehiculo "+m.getChapa()+"?"));
                 item.add(deleteLink);
             }
 

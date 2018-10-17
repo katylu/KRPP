@@ -9,6 +9,7 @@ package com.myapp.wicket.marcas;
 import com.myapp.wicket.TemplatePage;
 import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.entities.Marca;
+import com.parqueo.krpp.util.JavascriptEventConfirmation;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
@@ -58,9 +59,8 @@ public class Listar extends TemplatePage {
                         MarcaRepository.getInstance().deleteById(getModelObject());
                     }
                 };
-                deleteLink.add(new AttributeModifier("onclick",
-                        "return confirm('Esta seguro de eliminar la marca "
-                                + m.getNombreMarca().replace("\"", "\\\"")+ "?');"));
+                deleteLink.add(new JavascriptEventConfirmation("onclick", "Esta seguro de eliminar la marca "+m.getNombreMarca()+"?"));
+
                 item.add(deleteLink);
             }
 
