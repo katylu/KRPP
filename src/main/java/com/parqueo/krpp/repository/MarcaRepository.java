@@ -1,4 +1,4 @@
-package com.parqueo.krpp.api;
+package com.parqueo.krpp.repository;
 
 import com.parqueo.krpp.entities.Marca;
 import com.parqueo.krpp.util.KrppHibernateUtil;
@@ -9,15 +9,15 @@ import org.hibernate.SessionFactory;
 
 import java.util.List;
 
-public class MarcaApi {
+public class MarcaRepository {
 
     protected final SessionFactory sessionFactory = KrppHibernateUtil.getSessionFactory();
-    final static Logger logger = Logger.getLogger(MarcaApi.class);
-    private static MarcaApi instance;
+    final static Logger logger = Logger.getLogger(MarcaRepository.class);
+    private static MarcaRepository instance;
 
-    public static MarcaApi getInstance() {
+    public static MarcaRepository getInstance() {
         if (instance == null) {
-            instance = new MarcaApi();
+            instance = new MarcaRepository();
         }
         return instance;
     }

@@ -1,6 +1,8 @@
 
 package com.parqueo.krpp.entities;
 
+import com.parqueo.krpp.modelo.MarcasModel;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -54,5 +56,9 @@ public class Marca implements Serializable{
                 "idMarca=" + idMarca +
                 ", nombreMarca='" + nombreMarca + '\'' +
                 '}';
+    }
+
+    public MarcasModel toModel(){
+        return new MarcasModel(this.getIdMarca(), this.getNombreMarca());
     }
 }

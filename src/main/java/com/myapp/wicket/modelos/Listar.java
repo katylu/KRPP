@@ -4,11 +4,12 @@
  * Created on 21 de septiembre de 2018, 21:43
  */
 
-package com.myapp.wicket.marcas;
+package com.myapp.wicket.modelos;
 
 import com.myapp.wicket.TemplatePage;
-import com.parqueo.krpp.repository.MarcaRepository;
 import com.parqueo.krpp.entities.Marca;
+import com.parqueo.krpp.entities.Modelo;
+import com.parqueo.krpp.repository.ModeloRepository;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
@@ -31,36 +32,39 @@ public class Listar extends TemplatePage {
         super();
 
         //agregamos el enlace a la pagina de creacion
-        add(new BookmarkablePageLink<com.myapp.wicket.marcas.Crear>("Marca.Crear" ,com.myapp.wicket.marcas.Crear.class));
+        add(new BookmarkablePageLink<Crear>("Modelo.Crear" ,Crear.class));
 
         //obtenemos las marcas de la bd
-        List<Marca> marcas = MarcaRepository.getInstance().getAll();
+        List<Modelo> modelos = ModeloRepository.getInstance().getAll();
 
-        add(new ListView<Marca>("marcas", marcas) {
+        add(new ListView<Modelo>("modelos", modelos) {
             @Override
-            protected void populateItem(ListItem<Marca> item) {
-                Marca m = item.getModelObject();
+            protected void populateItem(ListItem<Modelo> item) {
+                Modelo m = item.getModelObject();
                 //columnas del listado
-                item.add(new Label("nombreMarca", new PropertyModel(item.getModel(), "nombreMarca")));
-                item.add(new Label("idMarca", new PropertyModel(item.getModel(), "idMarca")));
+                item.add(new Label("nombreModelo", new PropertyModel(item.getModel(), "nombreModelo")));
+                item.add(new Label("idModelo", new PropertyModel(item.getModel(), "idModelo")));
+                item.add(new Label("marca", new PropertyModel(item.getModel(), "marca.nombreMarca")));
 
                 //link para editar
                 PageParameters pageParameters = new PageParameters();
-                pageParameters.add("marca", m.getIdMarca());
+                pageParameters.add("modelo", m.getIdModelo());
                 item.add(new BookmarkablePageLink<Void>("editLink",
-                        com.myapp.wicket.marcas.Editar.class, pageParameters));
+                        Editar.class, pageParameters));
 
                 //link para eliminar
                 Link<Integer> deleteLink = new Link<Integer>("deleteLink",
-                        new Model<Integer>(m.getIdMarca())) {
+                        new Model<Integer>(m.getIdModelo())) {
                     @Override
                     public void onClick() {
-                        MarcaRepository.getInstance().deleteById(getModelObject());
+
+                        ModeloRepository.getInstance().deleteById(getModelObject());
+
                     }
                 };
                 deleteLink.add(new AttributeModifier("onclick",
-                        "return confirm('Esta seguro de eliminar la marca "
-                                + m.getNombreMarca().replace("\"", "\\\"")+ "?');"));
+                        "return confirm('Esta seguro de eliminar el modelo "
+                                + m.getNombreModelo().replace("\"", "\\\"")+ "?');"));
                 item.add(deleteLink);
             }
 
