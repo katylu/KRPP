@@ -1,4 +1,4 @@
-/*
+ /*
  * HomePage.java
  *
  * Created on 21 de septiembre de 2018, 21:43
@@ -60,6 +60,7 @@ public class Listar extends TemplatePage {
                     public void onClick() {
 
                         ModeloRepository.getInstance().deleteById(getModelObject());
+                        setResponsePage(Listar.class);
 
                     }
                 };

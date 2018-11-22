@@ -11,6 +11,7 @@ import com.parqueo.krpp.entities.Empleado;
 import com.parqueo.krpp.repository.EmpleadoRepository;
 import com.parqueo.krpp.util.JavascriptEventConfirmation;
 import org.apache.wicket.AttributeModifier;
+
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.link.Link;
@@ -58,10 +59,15 @@ public class Listar extends TemplatePage {
                     @Override
                     public void onClick() {
                         EmpleadoRepository.getInstance().deleteById(getModelObject());
+                  setResponsePage(Listar.class);
                     }
                 };
                 deleteLink.add(new JavascriptEventConfirmation("onclick", "Esta seguro de eliminar el empleado "+m.getNombreCompleto()+"?"));
                 item.add(deleteLink);
+               
+              
+                      
+              
             }
 
         });

@@ -1,4 +1,4 @@
-/*
+ /*
  * HomePage.java
  *
  * Created on 21 de septiembre de 2018, 21:43
@@ -57,6 +57,7 @@ public class Listar extends TemplatePage {
                     @Override
                     public void onClick() {
                         MarcaRepository.getInstance().deleteById(getModelObject());
+                        setResponsePage(Listar.class);
                     }
                 };
                 deleteLink.add(new JavascriptEventConfirmation("onclick", "Esta seguro de eliminar la marca "+m.getNombreMarca()+"?"));
